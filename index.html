@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Molly's Cafe</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -9,33 +12,79 @@
 
     <header>
         <h1>Molly's Cafe</h1>
-        <p>Fresh Food, Friendly Service</p>
+        <p>Fresh Food • Friendly Service • Rhyl</p>
     </header>
 
-    <section>
-        <h2>Welcome</h2>
-        <p>
-            Welcome to Molly's Cafe in Rhyl.
-            We serve delicious breakfasts,
-            lunches and hot drinks every day.
-        </p>
+    <nav>
+        <a href="#welcome">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#times">Opening Times</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Molly's Cafe</h2>
+            <p>Home-cooked food, fresh coffee, and a warm welcome every day.</p>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
     </section>
 
-    <section>
-        <h2>Opening Times</h2>
+    <main>
 
-        <ul>
-            <li>Monday - Friday: 10am - 3.30pm</li>
-            <li>Saturday - Sunday: Closed</li>
-        </ul>
-    </section>
+        <section id="welcome" class="card">
+            <h2>About Us</h2>
+            <p>
+                Molly's Cafe in Rhyl is a friendly local café serving breakfast,
+                lunch and drinks. Everything is made fresh and served with a smile.
+            </p>
+        </section>
 
-    <section>
-        <h2>Contact Us</h2>
+        <section id="menu" class="card">
+            <h2>Menu Preview</h2>
 
-        <p>Phone: 01745 314050</p>
-        <p>Email: mollyscafe2025@outlook.com</p>
-    </section>
+            <div class="menu-grid">
+
+                <div class="menu-item">
+                    <h3>Full Breakfast</h3>
+                    <p>Bacon, sausage, eggs, toast, beans</p>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Toasties</h3>
+                    <p>Cheese, ham, or tuna melt</p>
+                </div>
+
+                <div class="menu-item">
+                    <h3>Hot Drinks</h3>
+                    <p>Coffee, tea, hot chocolate</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="times" class="card">
+            <h2>Opening Times</h2>
+
+            <ul>
+                <li>Monday - Friday: 10:00am - 3:30pm</li>
+                <li>Saturday - Sunday: Closed</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Us</h2>
+
+            <p>📞 01745 314050</p>
+            <p>✉️ mollyscafe2025@outlook.com</p>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Molly's Cafe
+    </footer>
 
     <script src="script.js"></script>
 

@@ -1,23 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f8f8f8;
+    background: #f6f1ea;
+    color: #333;
 }
+
+/* HEADER */
 
 header {
-    background-color: #8b4513;
+    background: #8b4513;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 50px 20px;
 }
 
-section {
-    background: white;
-    margin: 20px;
+header h1 {
+    font-size: 3rem;
+}
+
+/* NAV */
+
+nav {
+    background: #6f350d;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+    background: url("https://images.unsplash.com/photo-1554118811-1e0d58224f24") center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-text {
+    background: rgba(0,0,0,0.5);
     padding: 20px;
     border-radius: 10px;
 }
 
-h2 {
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #8b4513;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* CARDS */
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
     color: #8b4513;
+    margin-bottom: 10px;
+}
+
+/* MENU GRID */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.menu-item {
+    background: #f5f2ed;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        height: 220px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
 }
