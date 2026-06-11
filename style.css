@@ -8,10 +8,10 @@ body {
     font-family: Arial, sans-serif;
     background: #f6f1ea;
     color: #333;
+    line-height: 1.6;
 }
 
 /* HEADER */
-
 header {
     background: #8b4513;
     color: white;
@@ -23,12 +23,18 @@ header h1 {
     font-size: 3rem;
 }
 
-/* NAV */
+header p {
+    opacity: 0.9;
+    margin-top: 5px;
+}
 
+/* NAV */
 nav {
     background: #6f350d;
     text-align: center;
     padding: 12px;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -36,10 +42,14 @@ nav a {
     text-decoration: none;
     margin: 0 12px;
     font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* HERO */
-
 .hero {
     background: url("https://images.unsplash.com/photo-1554118811-1e0d58224f24") center/cover no-repeat;
     height: 300px;
@@ -55,6 +65,7 @@ nav a {
     background: rgba(0,0,0,0.5);
     padding: 20px;
     border-radius: 10px;
+    max-width: 500px;
 }
 
 .btn {
@@ -68,7 +79,6 @@ nav a {
 }
 
 /* MAIN */
-
 main {
     max-width: 1000px;
     margin: auto;
@@ -76,7 +86,6 @@ main {
 }
 
 /* CARDS */
-
 .card {
     background: white;
     padding: 20px;
@@ -90,8 +99,7 @@ main {
     margin-bottom: 10px;
 }
 
-/* MENU GRID */
-
+/* MENU */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -104,8 +112,14 @@ main {
     border-radius: 10px;
 }
 
-/* FOOTER */
+/* MAP */
+iframe {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
@@ -114,7 +128,6 @@ footer {
 }
 
 /* MOBILE */
-
 @media (max-width: 768px) {
 
     header h1 {
