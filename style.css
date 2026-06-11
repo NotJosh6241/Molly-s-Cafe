@@ -23,11 +23,6 @@ header h1 {
     font-size: 3rem;
 }
 
-header p {
-    opacity: 0.9;
-    margin-top: 5px;
-}
-
 /* NAV */
 nav {
     background: #6f350d;
@@ -45,14 +40,10 @@ nav a {
     display: inline-block;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
 /* HERO */
 .hero {
     background: url("https://images.unsplash.com/photo-1554118811-1e0d58224f24") center/cover no-repeat;
-    height: 300px;
+    height: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,17 +56,6 @@ nav a:hover {
     background: rgba(0,0,0,0.5);
     padding: 20px;
     border-radius: 10px;
-    max-width: 500px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #8b4513;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
 }
 
 /* MAIN */
@@ -100,16 +80,20 @@ main {
 }
 
 /* MENU */
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+.menu-section h3 {
+    margin-top: 15px;
+    color: #8b4513;
 }
 
-.menu-item {
-    background: #f5f2ed;
-    padding: 15px;
-    border-radius: 10px;
+.menu-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.menu-section li {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
 }
 
 /* MAP */
